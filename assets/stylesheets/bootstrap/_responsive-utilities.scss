@@ -26,7 +26,7 @@
 // Visibility utilities
 // Note: Deprecated .visible-xs, .visible-sm, .visible-md, and .visible-lg as of v3.2.0
 
-@include responsive-invisibility('.visible-xs, .visible-sm, .visible-md, .visible-lg');
+@include responsive-invisibility('.visible-xs, .visible-sm, .visible-md, .visible-lg, .visible-xl');
 
 .visible-xs-block,
 .visible-xs-inline,
@@ -39,7 +39,10 @@
 .visible-md-inline-block,
 .visible-lg-block,
 .visible-lg-inline,
-.visible-lg-inline-block {
+.visible-lg-inline-block,
+.visible-xl-block,
+.visible-xl-inline,
+.visible-xl-inline-block {
   display: none !important;
 }
 
@@ -119,6 +122,25 @@
   }
 }
 
+@media (min-width: $screen-xl-min) {
+  @include responsive-visibility('.visible-xl');
+}
+.visible-lg-block {
+  @media (min-width: $screen-xl-min) {
+    display: block !important;
+  }
+}
+.visible-lg-inline {
+  @media (min-width: $screen-xl-min) {
+    display: inline !important;
+  }
+}
+.visible-lg-inline-block {
+  @media (min-width: $screen-xl-min) {
+    display: inline-block !important;
+  }
+}
+
 @media (max-width: $screen-xs-max) {
   @include responsive-invisibility('.hidden-xs');
 }
@@ -133,6 +155,10 @@
 
 @media (min-width: $screen-lg-min) {
   @include responsive-invisibility('.hidden-lg');
+}
+
+@media (min-width: $screen-lg-min) {
+  @include responsive-invisibility('.hidden-xl');
 }
 
 
