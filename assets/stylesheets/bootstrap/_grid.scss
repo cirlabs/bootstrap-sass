@@ -90,6 +90,6 @@
 // Extra Large Grid
 //
 // Columns, offsets, pushes, and pulls for the extra large desktop device range
-@meda (min-width: $screen-xl-min) {
+@media (min-width: $screen-xl-min) {
   @include make-grid(xl);
 }
