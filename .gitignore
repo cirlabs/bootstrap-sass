@@ -15,4 +15,7 @@ tmp/
 test/screenshots/
 test/dummy_rails/log/*.log
 
+# Node
+node_modules
+
 .DS_Store

@@ -348,7 +348,7 @@ $container-lg:                 $container-large-desktop !default;
 // Extra large screen / large moniter
 $container-xl-desktop:       ((1560px + $grid-gutter-width)) !default;
 //** For `$screen-xl-min` and up.
-$container-xl:               $container-large-desktop !default;
+$container-xl:               1500px !default;
 
 //== Navbar
 //
